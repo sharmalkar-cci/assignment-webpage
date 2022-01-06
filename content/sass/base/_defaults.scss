@@ -1,0 +1,53 @@
+/* Base Stylings like ul, p, body, etc */
+
+body, html {
+    @include font-size($font-size-base);
+
+    @include media-breakpoint-up(sm) {
+        @include font-size($font-size-para);
+    }
+}
+
+body{
+    font-family: $montserrat;
+    // background-color: $grey-tertiary;
+    color: $secondary;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+p {
+    @include font-size($font-size-para);
+    line-height: 24px;
+    color: $secondary;
+}
+
+a {
+    color: $secondary;
+    text-decoration: none;
+
+    @include vendor-prefix(transition, all 0.2s ease-out);
+}
+
+a:hover {
+    color: $green;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+
+    @include media-breakpoint-up(lg) {
+        max-width: 1013px;
+    }
+}

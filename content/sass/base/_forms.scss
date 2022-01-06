@@ -1,0 +1,48 @@
+/* FORM ELEMENTS */
+
+.custom-input {
+    position: relative;
+    width: 260px;
+    height: 44px;
+    border: 1px solid $grey-tertiary;
+    @include vendor-prefix(border-radius, 28px);
+    background-color: $grey-secondary;
+    overflow: hidden;
+    @include media-breakpoint-up(sm) {
+        width: 410px;
+        height: 56px;
+    }
+
+    input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: $grey-primary;
+        padding: 18px 70px 18px 22px;
+        border: 0;
+
+        &:focus,
+        &:hover,
+        &:active {
+            outline: none;
+            border: 0;
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: inherit;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    margin: 4px 5px 0;
+
+    img {
+        @include media-breakpoint-down(xs) {
+            height: 34px;
+        }
+    }
+}

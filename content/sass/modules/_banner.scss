@@ -1,0 +1,25 @@
+// Banners Css
+
+.page-banner {
+    min-height: 460px;
+
+    h1 {
+        margin-bottom: 5px;
+    }
+
+    p {
+        @include font-size(25px);
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .banner-content {
+        max-width: 645px;
+        padding-top: 82px;
+    }
+}
+
+.banner-image {
+    position: absolute;
+    left: 45%;
+}
