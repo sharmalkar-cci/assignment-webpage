@@ -1,0 +1,25 @@
+/* Cards */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 -15px;
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+    }
+}
+
+.card {
+    border: 0;
+    padding: 0 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.card-img-top {
+    margin-bottom: 15px;
+    width: max-content;
+    height: 105px;
+    width: 110px;
+}

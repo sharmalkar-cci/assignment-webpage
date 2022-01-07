@@ -9,12 +9,15 @@ $primary                :       #192631;
 $secondary              :       #303030;
 $green                  :       #84cb08;
 $blue                   :       #2e79b8;
+$light-blue             :       #B4ddff;
 $white                  :       #fff;
 $black                  :       #000;
-$black-bg               :       rgba($black, 0.3);
+$black-bg-primary       :       rgba($black, 0.3);
+$black-100              :       rgba($black, 0.2);
 $grey-primary           :       #777;
 $grey-secondary         :       #fcfcfc;
 $grey-tertiary          :       #b8b8b8;
+$grey-100               :       #ccc;
 
 /* Base font size */
 $font-size-base: 14px;

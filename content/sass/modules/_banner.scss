@@ -2,8 +2,16 @@
 
 .page-banner {
     min-height: 460px;
+    @include media-breakpoint-up(md) {
+        background: url(/content/images/content-images/car-desktop.jpg) no-repeat right -10% center;
+    }
+    @include media-breakpoint-up(lg) {
+        background-position: right top 10px;
+    }
+
 
     h1 {
+        font-weight: $font-weight-bold;
         margin-bottom: 5px;
     }
 
@@ -16,10 +24,13 @@
     .banner-content {
         max-width: 645px;
         padding-top: 82px;
+        align-items: center;
+        @include media-breakpoint-up(md) {
+            align-items: flex-start;
+        }
     }
 }
 
 .banner-image {
-    position: absolute;
-    left: 45%;
+    
 }
