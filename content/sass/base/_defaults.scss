@@ -2,7 +2,6 @@
 
 body, html {
     @include font-size($font-size-base);
-
     @include media-breakpoint-up(sm) {
         @include font-size($font-size-para);
     }
@@ -10,7 +9,6 @@ body, html {
 
 body{
     font-family: $montserrat;
-    // background-color: $grey-tertiary;
     color: $secondary;
     line-height: 1.4;
     overflow-x: hidden;
@@ -25,13 +23,11 @@ p {
 a {
     color: $secondary;
     text-decoration: none;
-
     @include vendor-prefix(transition, all 0.2s ease-out);
-}
-
-a:hover {
-    color: $green;
-    text-decoration: none;
+    &:hover {
+        color: $green !important;
+        text-decoration: none;
+    }
 }
 
 ul {
@@ -46,8 +42,15 @@ li {
 .container {
     max-width: 100%;
     padding: 0 20px;
-
     @include media-breakpoint-up(lg) {
         max-width: 1013px;
+    }
+}
+
+.container-wrapper {
+    padding: 40px 0;
+    @include media-breakpoint-up(lg) {
+        max-width: 1300px;
+        margin: auto;
     }
 }

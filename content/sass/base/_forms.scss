@@ -5,25 +5,24 @@
     width: 260px;
     height: 44px;
     border: 1px solid $grey-tertiary;
-    @include vendor-prefix(border-radius, 28px);
-    background-color: $grey-secondary;
     overflow: hidden;
+    @include vendor-prefix(border-radius, 28px);
     @include media-breakpoint-up(sm) {
         width: 410px;
         height: 56px;
     }
-
     input {
         position: absolute;
         width: 100%;
         height: 100%;
+        font-weight: $font-weight-light;
         color: $grey-primary;
+        background-color: $grey-secondary;
         padding: 12px 60px 12px 20px;
         border: 0;
         @include media-breakpoint-up(sm) {
             padding: 18px 70px 18px 22px;
         }
-
         &:focus,
         &:hover,
         &:active {
@@ -36,13 +35,13 @@
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: inherit;
+    font-weight: $font-weight-light;
 }
 
 .search-btn {
     position: absolute;
     right: 0;
     margin: 4px 5px 0;
-
     img {
         @include media-breakpoint-down(xs) {
             height: 34px;

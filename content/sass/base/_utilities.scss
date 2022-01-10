@@ -7,3 +7,15 @@
 .text-weight-light {
     font-weight: $font-weight-light !important;
 }
+
+.mb-lg-40 {
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 40px !important;
+    }
+}
+
+.mb-lg-45 {
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 45px !important;
+    }
+}

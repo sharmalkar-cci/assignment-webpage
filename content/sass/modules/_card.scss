@@ -11,15 +11,14 @@
 }
 
 .card {
-    border: 0;
-    padding: 0 15px;
     text-align: center;
     align-items: center;
+    padding: 0 15px;
+    border: 0;
 }
 
 .card-img-top {
-    margin-bottom: 15px;
-    width: max-content;
-    height: 105px;
     width: 110px;
+    height: 105px;
+    margin-bottom: 10px;
 }

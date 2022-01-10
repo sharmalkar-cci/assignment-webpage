@@ -1,3 +1,5 @@
+/* Header */
+
 /* Mobile menu overlay start */
 .menu-overlay {
     opacity: 0;
@@ -9,7 +11,6 @@
 .mobile-menu-open {
     position: fixed;
     width: 100%;
-
     .menu-overlay {
         position: absolute;
         opacity: 1;

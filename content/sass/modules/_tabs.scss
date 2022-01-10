@@ -1,14 +1,14 @@
 /* Bootstrap tabs */
 
 .nav-tabs {
-    border-color: $grey-100;
-    margin-bottom: 45px;
-    h6 {
+    border-color: $grey-200;
+    margin-bottom: 25px;
+    h4 {
         font-weight: $font-weight-bold;
     }
     .nav-link {
         position: relative;
-        padding: 0 0 15px 0;
+        padding: 0 0 10px 0;
         margin-right: 30px;
         border: 0;
         &:hover,
@@ -16,7 +16,7 @@
             &::after {
                 content: "";
                 position: absolute;
-                width: 95%;
+                width: 96%;
                 height: 4px;
                 bottom: 0;
                 left: 0;

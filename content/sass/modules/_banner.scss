@@ -1,32 +1,37 @@
 // Banners Css
 
 .page-banner {
-    min-height: 460px;
+    min-height: 440px;
     @include media-breakpoint-up(md) {
-        background: url(/content/images/content-images/car-desktop.jpg) no-repeat right -10% center;
+        min-height: 479px;
+        background: url(../../content/images/content-images/banner-car.jpg) no-repeat right center/contain;
     }
     @include media-breakpoint-up(lg) {
-        background-position: right top 10px;
+        background-position: right -10px top -5px;
+        background-size: 82%;
     }
-
-
+    @include media-breakpoint-up(xl) {
+        background-size: 67%;
+    }
+    @media only screen and (min-width: 1600px) {
+        background-size: 57%;
+    }
     h1 {
         font-weight: $font-weight-bold;
         margin-bottom: 5px;
     }
-
     p {
         @include font-size(25px);
         line-height: 1.2;
         margin-bottom: 30px;
     }
-
     .banner-content {
         max-width: 645px;
-        padding-top: 82px;
+        padding-top: 65px;
         align-items: center;
         @include media-breakpoint-up(md) {
             align-items: flex-start;
+            padding-top: 82px;
         }
     }
 }
