@@ -40,7 +40,7 @@ footer {
     }
     .bottom-waves {
         height: 68px;
-        background: url(/content/images/style-images/wave-green.svg) no-repeat bottom, url(/content/images/style-images/wave-blue.svg) no-repeat bottom;
+        background: url(../../content/images/style-images/wave-green.svg) no-repeat bottom, url(../../content/images/style-images/wave-blue.svg) no-repeat bottom;
         @include media-breakpoint-up(sm) {
             height: 76px;
         }

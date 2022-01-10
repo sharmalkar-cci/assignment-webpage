@@ -482,7 +482,7 @@ footer .footer-links a {
 
 footer .bottom-waves {
   height: 68px;
-  background: url(/content/images/style-images/wave-green.svg) no-repeat bottom, url(/content/images/style-images/wave-blue.svg) no-repeat bottom;
+  background: url(../../content/images/style-images/wave-green.svg) no-repeat bottom, url(../../content/images/style-images/wave-blue.svg) no-repeat bottom;
 }
 
 @media (min-width: 576px) {
