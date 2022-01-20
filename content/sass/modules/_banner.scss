@@ -1,0 +1,43 @@
+/* Banner Css */
+
+.page-banner {
+    @include media-breakpoint-up(md) {
+        min-height: 479px;
+        background: url(../../content/images/content-images/banner-car.jpg) no-repeat right center/contain;
+    }
+    @include media-breakpoint-up(lg) {
+        background-position: right -10px top -5px;
+        background-size: 82%;
+    }
+    @include media-breakpoint-up(xl) {
+        background-size: 67%;
+    }
+    @media only screen and (min-width: 1600px) {
+        background-size: 57%;
+    }
+    h1 {
+        font-weight: $font-weight-bold;
+        margin-bottom: 5px;
+        line-height: 1.17;
+        @include media-breakpoint-down(sm) {
+            @include font-size(58px);
+        }
+    }
+    p {
+        @include font-size(25px);
+        line-height: 1.2;
+        margin-bottom: 40px;
+        @include media-breakpoint-down(sm) {
+            @include font-size(20px);
+        }
+    }
+    .banner-content {
+        padding: 65px 0 77px;
+        align-items: center;
+        @include media-breakpoint-up(md) {
+            max-width: 645px;
+            align-items: flex-start;
+            padding: 82px 0 0;
+        }
+    }
+}

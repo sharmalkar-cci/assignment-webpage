@@ -1,0 +1,47 @@
+/* Cards */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 -15px;
+    @include media-breakpoint-up(lg) {
+        flex-direction: row;
+    }
+}
+
+.card {
+    text-align: center;
+    align-items: center;
+    padding: 0 15px;
+    border: 0;
+    margin-top: 10px;
+    @include media-breakpoint-up(lg) {
+        margin-top: 0;
+    }
+}
+
+/* Sprite image scss start */
+.fill-icons {
+    width: 124px;
+    height: 96px;
+    background: url(../../content/images/content-images/sprite-image-2@2x.png) no-repeat 0 0/cover;
+    margin-bottom: 10px;
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 15px;
+    }
+    &.icon-send {
+        background-position-x: -132px;
+    }
+    &.icon-community {
+        background-position-x: -252px;
+    }
+    &.icon-chat {
+        background-position: -368px 8px;
+    }
+    &.icon-car {
+        background-position-x: -480px;
+        margin-bottom: 15px;
+    }
+}
+/* Sprite image scss end */

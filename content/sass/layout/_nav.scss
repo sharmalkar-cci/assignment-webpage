@@ -1,0 +1,108 @@
+ /* Navigations/Menus */
+
+ nav {
+    padding: 20px 0 8px !important;
+    .nav-item {
+        @include media-breakpoint-up(md) {
+            padding: 0 12px;
+        }
+    }
+    .nav-link {
+        display: inline-block;
+        @include font-size($font-size-para);
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        color: $secondary;
+    }
+    .navbar-collapse {
+        @include media-breakpoint-down(sm) {
+            position: fixed;
+            margin-top: 0;
+            top: 0;
+            right: -100%;
+            height: 100vh;
+            width: 82%;
+            z-index: 99;
+            background-color: $white;
+            @include vendor-prefix(transition, all 0.5s linear);
+            &.show {
+                right: 0;
+            }
+            .navbar-nav {
+                margin-left: 20px !important;
+            }
+            .nav-link {
+                padding: 15px 0;
+            }
+        }
+        @media screen and (max-width: 360px) {
+            width: 90%; // Iphone 5/SE:fix for sign-in text shifting on 2 lines
+        }
+        .mob-nav-head {
+            margin: 60px 20px 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba($grey-tertiary, 0.7);
+        }
+        .mob-nav-links {
+            @include font-size($font-size-para);
+            color: $secondary;
+        }
+        @include media-breakpoint-up(md) {
+            align-items: center;
+        }
+    }
+    /* Navbar toggler animation start */
+    .navbar-toggler {
+        padding: 0;
+        margin: 6px 4px 0 0;
+        border: 0;
+        z-index: 100;
+        &:focus {
+            outline: 0;
+        }
+        &:not(.collapsed) {
+            .navbar-toggler-icon {
+                &:nth-last-of-type(2) {
+                    visibility: hidden;
+                    @include vendor-prefix(transition, all 0.5s ease-in-out);
+                }
+            }
+        }
+        &.collapsed {
+            .navbar-toggler-icon {
+                &:first-child,
+                &:last-child {
+                    top: 0;
+                    @include vendor-prefix(transform, rotate(0deg));
+                    transition-delay: 0s;
+                }
+            }
+        }
+        .navbar-toggler-icon {
+            display: block;
+            width: 27px;
+            height: 3px;
+            background: $secondary;
+            margin-bottom: 5px;
+            position:relative;
+            z-index: 1;
+            &:first-child,
+            &:last-child {
+                @include vendor-prefix(transition, all 0.5s ease-in-out 0.5s);
+            }
+            &:first-child {
+                @include vendor-prefix(transform, rotate(45deg));
+                top: 9px;
+            }
+            &:last-child {
+                @include vendor-prefix(transform, rotate(-45deg));
+                top: -7px;
+            }
+            &:nth-last-of-type(2) {
+                visibility: visible;
+                @include vendor-prefix(transition, all 0.5s ease-in-out 0.2s);
+            }
+        }
+    }
+    /* Navbar toggler animation end */
+ }

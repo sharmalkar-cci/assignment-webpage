@@ -1,0 +1,48 @@
+/* Footer */
+
+footer {    
+    p {
+        @include font-size(13px);
+        font-weight: $font-weight-light;
+        color: $grey-primary;
+    }
+    .container-wrapper {
+        background: linear-gradient(to bottom, $grey-100 0%, $white 100%);
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 20px;
+        }
+        @include media-breakpoint-up(lg) {
+            clip-path: polygon(0% 19%, 100% 0%, 100% 100%, 0% 100%);
+            padding: 109px 0 90px;
+        }
+    }
+    .social-icons {
+        display: flex;
+        > a {
+            display: inline-block;
+            margin: 0 10px 15px 0;
+        }
+    }
+    .footer-links {
+        margin-bottom: 20px;
+        @include media-breakpoint-up(md) {
+            margin: 0
+        }
+        li {
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 2px
+            }
+        }
+        a {
+            @include font-size(14px);
+            font-weight: $font-weight-light;
+        }
+    }
+    .bottom-waves {
+        height: 68px;
+        background: url(../../content/images/style-images/wave-green.svg) no-repeat bottom, url(../../content/images/style-images/wave-blue.svg) no-repeat bottom;
+        @include media-breakpoint-up(sm) {
+            height: 76px;
+        }
+    }
+}

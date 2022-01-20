@@ -1,0 +1,31 @@
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight-semibold;
+    color: $primary;
+}
+
+h1 {
+    @include font-size(70px);
+}
+
+h2 {
+    @include font-size(41px);
+}
+
+h3 {
+    @include font-size(25px);
+}
+
+h4 {
+    @include font-size(18px);
+}
+
+h5 {
+    @include font-size(16px);
+}
