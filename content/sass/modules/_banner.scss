@@ -32,10 +32,10 @@
         }
     }
     .banner-content {
-        max-width: 645px;
         padding: 65px 0 77px;
         align-items: center;
         @include media-breakpoint-up(md) {
+            max-width: 645px;
             align-items: flex-start;
             padding: 82px 0 0;
         }
