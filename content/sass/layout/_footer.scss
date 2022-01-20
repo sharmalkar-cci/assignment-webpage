@@ -35,7 +35,7 @@ footer {
         }
         a {
             @include font-size(14px);
-            color: $primary;
+            font-weight: $font-weight-light;
         }
     }
     .bottom-waves {

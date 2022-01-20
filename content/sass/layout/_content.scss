@@ -19,6 +19,9 @@
     }
     h2 {
         margin-bottom: 25px;
+        @include media-breakpoint-down(sm) {
+            @include font-size(32px);
+        }
         @include media-breakpoint-up(lg) {
             margin-bottom: 50px;
         }
@@ -28,11 +31,14 @@
         position: relative;
         video {
             max-width: 100%;
-            height: 180px;
+            height: auto;
             cursor: pointer;
             @include vendor-prefix(border-radius, 10px);
             @include vendor-prefix(box-shadow, 0 4px 10px 0 $black-100);
             @include media-breakpoint-up(sm) {
+                height: 280px;
+            }
+            @include media-breakpoint-up(lg) {
                 height: 320px;
             }
             @include media-breakpoint-up(lg) {
@@ -41,18 +47,50 @@
         }
     }
     .content-wrapper {
+        text-align: center;
         @include media-breakpoint-up(lg) {
             display: flex;
             align-items: flex-start;
             margin-left: 35px;
+            text-align: left;
         }
     }
+    /* Sprite image scss start */
+    .icons {
+        width: 32px;
+        height: 36px;
+        background: url(../../content/images/content-images/sprite-image-1@2x.png) no-repeat 0 0/cover;
+        margin: 0 auto;
+        @include media-breakpoint-up(lg) {
+            min-width: 32px;
+            margin-right: 16px;
+        }
+        &.icon-secure {
+            min-width: 36px;
+            height: 39px;
+        }
+        &.icon-lock {
+            background-position-x: -37px;
+            @include media-breakpoint-up(lg) {
+                margin-right: 20px;
+            }
+        }
+        &.icon-umbrella {
+            min-width: 40px;
+            background-position-x: -70px;
+            @include media-breakpoint-up(lg) {
+                margin-right: 12px;
+            }
+        }
+    }
+    /* Sprite image scss end */
     .content {
         margin-top: 10px;
         @include media-breakpoint-up(lg) {
-            margin: 8px 0 0 16px;
+            margin: 8px 9px 0 0;
         }
         p {
+            font-weight: $font-weight-light;
             margin-bottom: 20px;
             line-height: 1.2;
         }
@@ -68,11 +106,11 @@
     }
     .direction-arrow {
         min-width: 10px;
-        background: url(/content/images/favicons/icon-arrow-right.svg) no-repeat center/auto;
+        background: url(../../content/images/favicons/icon-arrow-right.svg) no-repeat center/auto;
         height: 50px;
         @include vendor-prefix(transform, rotate(90deg));
         @include media-breakpoint-up(lg) {
-            height: 105px;
+            height: 80px;
             @include vendor-prefix(transform, rotate(0deg));
         }
     }
@@ -80,6 +118,7 @@
         @include font-size(15px);
         font-weight: $font-weight-light;
         max-width: 174px;
+        line-height: 1.2;
     }
 }
 /* buyer and seller section end */

@@ -1,15 +1,12 @@
 /* Base Stylings like ul, p, body, etc */
 
 body, html {
-    @include font-size($font-size-base);
-    @include media-breakpoint-up(sm) {
-        @include font-size($font-size-para);
-    }
+    @include font-size($font-size-para);
 }
 
 body{
     font-family: $montserrat;
-    color: $secondary;
+    color: $primary;
     line-height: 1.4;
     overflow-x: hidden;
 }
@@ -17,11 +14,11 @@ body{
 p {
     @include font-size($font-size-para);
     line-height: 24px;
-    color: $secondary;
+    color: $primary;
 }
 
 a {
-    color: $secondary;
+    color: $primary;
     text-decoration: none;
     @include vendor-prefix(transition, all 0.2s ease-out);
     &:hover {
